@@ -5,13 +5,13 @@ terraform {
       version = "2.11.1"
     }
   }
-}
 
-backend "remote" {
-  organization = "meetup-dev"
+  backend "remote" {
+    organization = "meetup-dev"
 
-  workspaces {
-    name = "terraform"
+    workspaces {
+      name = "terraform"
+    }
   }
 }
 

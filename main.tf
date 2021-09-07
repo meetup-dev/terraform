@@ -18,3 +18,10 @@ terraform {
 provider "digitalocean" {
   //
 }
+
+resource "digitalocean_project" "dev" {
+  name        = "Development"
+  description = "A project for WDC development resources."
+  purpose     = "Web Application"
+  environment = "Development"
+}
